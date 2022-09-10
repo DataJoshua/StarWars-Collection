@@ -1,33 +1,48 @@
 .home{
-    position: relative;
-    .home-loader{
+  .banner{
+    h1{
+      text-align: center;
+    }
+
+   
+    .img-container{
+      height: 50vh;
+      overflow: hidden;
+      background-image: url("../../Assets/imgs/banner.jpg");
+      background-attachment: fixed;
+      background-position:top;
+      background-size:cover;
+      background-repeat: no-repeat;
+      position: relative;
+
+      &:hover > .img-container-logo  {
+        transform: translate(-50%, -50%) scale(1.2);
+      }
+     .img-container-logo{
+      background:url("../../Assets/imgs/sw.png");
+      position: absolute;
+      border-radius: 10px;
+      height: 100px;
+      z-index: 100;
+      width:200px ;
+      background-position: center;
+      background-size: cover;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: transform 2s ease;
+     }
+
+      &::before{
+        content: '';
         position: absolute;
         top: 0;
         right: 0;
-        left:0;
-        bottom: 0;
-        place-items: center;
-        .loader{
-            width: 90px;
-            height:90px;
-            background-color: #ccc;
-            border-radius: 50%;  
-            animation: morp 2s infinite;    
-        }
-    }
-}
-
-
-@keyframes morp{
-    0%, 100%{
-      border-radius: 50%;
-      transform: rotate(0deg);
-      background-color: rgb(81, 60, 11);
-      
-    }
-    50%{
-      border-radius: 10%;
-      transform: rotate(180deg);
-      background-color: purple;
+        bottom: 0;  
+        left: 0;
+        background: linear-gradient(226deg, rgba(126, 83, 162, 0.299), rgba(152, 225, 25, 0.288));
+      }
     }
   }
+
+}
