@@ -1,0 +1,52 @@
+.home {
+  position: relative;
+}
+
+.home .home-loader {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  place-items: center;
+}
+
+.home .home-loader .loader {
+  width: 90px;
+  height: 90px;
+  background-color: #ccc;
+  border-radius: 50%;
+  -webkit-animation: morp 2s infinite;
+          animation: morp 2s infinite;
+}
+
+@-webkit-keyframes morp {
+  0%, 100% {
+    border-radius: 50%;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    background-color: #513c0b;
+  }
+  50% {
+    border-radius: 10%;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    background-color: purple;
+  }
+}
+
+@keyframes morp {
+  0%, 100% {
+    border-radius: 50%;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    background-color: #513c0b;
+  }
+  50% {
+    border-radius: 10%;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    background-color: purple;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
