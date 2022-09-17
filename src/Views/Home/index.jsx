@@ -14,7 +14,7 @@ function Home() {
                     <div className="img-container-logo"></div>
                 </div>
             </div>
-            <div style={{height:"200vh"}}></div>
+           
         </div> 
     );
 }

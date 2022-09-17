@@ -20,7 +20,10 @@ function FilmsInfo() {
     }, [])
 
 
-    return ( <h1>{data.title}</h1> );
+    return ( 
+       <>
+       </>
+    );
 }
 
 export default FilmsInfo;

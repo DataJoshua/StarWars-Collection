@@ -10,8 +10,10 @@ function ListPlanet({data}) {
         <>
             <h1>Planets</h1>
             {data.results?.map((val, index)=>{
-                let {name} = val
-                return <h3 key={index}><Link to={`/collections/planets/${index + 1}`}>{name}</Link></h3>
+                let {name, url} = val
+                let newArr = url.split("/")
+                let id = newArr[newArr.length - 2]
+                return <h3 key={index}><Link to={`/collections/planets/${id}`}>{name}</Link></h3>
             })}
             
         </>

@@ -1,8 +1,11 @@
 import React from 'react'
 import {useParams} from 'react-router-dom';
+import "./styles.css"
 
 function HOCListFromApi(WrapperComponent, APIurl){
     
+
+
     return class extends React.Component{
         constructor(props){
             super(props)
@@ -28,6 +31,7 @@ function HOCListFromApi(WrapperComponent, APIurl){
       
         handleNextClick = ()=>{
             let {data} = this.state
+
             if(data.next){
                 
                 this.makeApiCall(data.next)
@@ -37,6 +41,7 @@ function HOCListFromApi(WrapperComponent, APIurl){
          
         handlePrevClick = ()=>{
             let {data} = this.state
+            
             if(data.previous){
                 
                 this.makeApiCall(data.previous)
@@ -48,12 +53,15 @@ function HOCListFromApi(WrapperComponent, APIurl){
 
             let {data} = this.state
             return(
-                <>
+                <div className='listHOC-container'>
                     <WrapperComponent data={this.state.data}></WrapperComponent>
-                    {data.previous &&  <button onClick={()=> this.handlePrevClick()}>prev</button>}
-                    {data.next &&  <button onClick={()=> this.handleNextClick()}>next</button>}
-            
-                </>
+                    <div className='btns'>
+                        {data.previous &&  <button onClick={()=> this.handlePrevClick()}>prev</button>}
+                        {data.next &&  <button onClick={()=> this.handleNextClick()}>next</button>}
+                
+                    </div>
+
+                </div>
             )
         }
     }

@@ -10,8 +10,11 @@ function ListPerson({data}) {
         <>
             <h1>Character</h1>
             {data.results?.map((val, index)=>{
-                let {name} = val
-                return <h3 key={index}><Link to={`/collections/characters/${index + 1}`}>{name}</Link></h3>
+                let {name, url} = val
+                let arrUrl = url.split("/")
+                let id = arrUrl[arrUrl.length - 2]
+                console.log(id);
+                return <h3 key={index}><Link to={`/collections/characters/${id}`}>{name}</Link></h3>
             })}
             
         </>

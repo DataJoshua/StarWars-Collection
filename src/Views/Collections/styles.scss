@@ -1,0 +1,49 @@
+.container-collections{
+    background-color: #000000;
+    background-image: linear-gradient(135deg, #000000 0%, #111d71 100%);
+    height: 100vh;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    
+    h1{
+        color: #fff;
+        margin-top: 20px;
+    }
+    .collections{
+        display: flex;
+        justify-content: space-evenly;
+        gap: 20px;
+        .collection-option{
+            display: flex;
+            flex-direction: column;
+          
+            .image-characters{
+                background-image: url("../../Assets/imgs/characters.png");
+                background-size: cover;
+                height: 300px;
+                width: 300px;
+            }
+            .image-planets{
+                background-image: url("../../Assets/imgs/planets.jpg");
+                background-size: cover;
+                height: 300px;
+                width: 300px;
+            }
+            .image-films{
+                background-image: url("../../Assets/imgs/ships.jpg");
+                background-size: cover;
+                background-position: center;
+                height: 300px;
+                width: 300px;
+            }
+        }
+     
+       
+        a{
+            color: #fff;
+        }
+            
+        
+    }
+}

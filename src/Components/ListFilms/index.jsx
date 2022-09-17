@@ -3,11 +3,15 @@ import HOCListFromApi from "../HOCList";
 
 function ListFilms({data}) {
     return (<>
-        <ul>
+        <h1>Films</h1>
+        
             {data.results?.map((val, index)=>{
-                return <li key={index}><Link to={`/collections/films/${index + 1}`}>{val.title}</Link></li>
+                const {url, title} = val
+                const arrNew = url.split("/")
+                const id = arrNew[arrNew.length -2]
+                return <h3 key={index}><Link to={`/collections/films/${id}`}>{title}</Link></h3>
             })}
-        </ul>
+        
     </>  );
 }
 

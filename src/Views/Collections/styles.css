@@ -1,1 +1,61 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+.container-collections {
+  background-color: #000000;
+  background-image: linear-gradient(135deg, #000000 0%, #111d71 100%);
+  height: 100vh;
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.container-collections h1 {
+  color: #fff;
+  margin-top: 20px;
+}
+
+.container-collections .collections {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  gap: 20px;
+}
+
+.container-collections .collections .collection-option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container-collections .collections .collection-option .image-characters {
+  background-image: url("../../Assets/imgs/characters.png");
+  background-size: cover;
+  height: 300px;
+  width: 300px;
+}
+
+.container-collections .collections .collection-option .image-planets {
+  background-image: url("../../Assets/imgs/planets.jpg");
+  background-size: cover;
+  height: 300px;
+  width: 300px;
+}
+
+.container-collections .collections .collection-option .image-films {
+  background-image: url("../../Assets/imgs/ships.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 300px;
+}
+
+.container-collections .collections a {
+  color: #fff;
+}
+/*# sourceMappingURL=styles.css.map */

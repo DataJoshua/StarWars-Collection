@@ -1,0 +1,27 @@
+.listHOC-container{
+    background:#000;
+    h1{
+        color: #fff;
+      
+    }
+    a{
+        color: #fff;
+        text-decoration: none;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    height: 100vh;
+    background-position: center;
+    display: grid;
+    place-items: center;
+    position: relative;
+    .btns{
+        display: flex ;
+        gap: 10px;
+        button{
+            width: 130px;
+            height: 30px;
+        }
+    }
+}
