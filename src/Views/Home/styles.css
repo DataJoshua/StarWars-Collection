@@ -1,7 +1,6 @@
 .home .banner h1 {
   text-align: center;
 }
-
 .home .banner .img-container {
   height: 100vh;
   overflow: hidden;
@@ -12,12 +11,9 @@
   background-repeat: no-repeat;
   position: relative;
 }
-
 .home .banner .img-container:hover > .img-container-logo {
-  -webkit-transform: translate(-50%, -50%) scale(1.2);
-          transform: translate(-50%, -50%) scale(1.2);
+  transform: translate(-50%, -50%) scale(1.2);
 }
-
 .home .banner .img-container .img-container-logo {
   background: url("../../Assets/imgs/sw.png");
   position: absolute;
@@ -29,21 +25,15 @@
   background-size: cover;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  -webkit-transition: -webkit-transform 2s ease;
-  transition: -webkit-transform 2s ease;
+  transform: translate(-50%, -50%);
   transition: transform 2s ease;
-  transition: transform 2s ease, -webkit-transform 2s ease;
 }
-
 .home .banner .img-container::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   background: linear-gradient(226deg, rgba(126, 83, 162, 0.299), rgba(152, 225, 25, 0.288));
-}
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */

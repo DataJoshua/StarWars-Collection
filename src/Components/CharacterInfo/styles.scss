@@ -5,9 +5,10 @@
     padding: 10px;
     display: flex;
     align-items: center;
+
     justify-content: center;
-    flex-direction: column;
-    gap: 20px;
+
+    gap: 100px;
 
     h1{
         text-align: center;
@@ -15,17 +16,26 @@
         padding: 0px 100px;
          
     }
-    .table-info{
-        td, th{
-            padding: 10px 20px;
-            text-align: center;
-        }
-    }   
-    tr:nth-child(odd){
-        background-color: rgba(204, 204, 204, 0.9);
+  
+    td, th{
+        padding: 5px 20px;
+        text-align: center;
     }
-    tr:nth-child(even){
-        background-color: rgba(255, 255, 255, 0.5);
+     
+    thead{
+        tr{
+            background-color:  rgba(204, 204, 204, 0.9);
+        }
+    }
+    tbody{
+        color: #fff;
     }
 
+    a{
+        text-decoration: none;
+        color: #fff;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
 }

@@ -3,38 +3,30 @@
   height: 100vh;
   background-size: cover;
   padding: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
 }
-
 .container h1 {
   text-align: center;
   background-color: rgba(204, 204, 204, 0.9);
   padding: 0px 100px;
 }
-
-.container .table-info td, .container .table-info th {
-  padding: 10px 20px;
+.container td, .container th {
+  padding: 5px 20px;
   text-align: center;
 }
-
-.container tr:nth-child(odd) {
+.container thead tr {
   background-color: rgba(204, 204, 204, 0.9);
 }
-
-.container tr:nth-child(even) {
-  background-color: rgba(255, 255, 255, 0.5);
+.container tbody {
+  color: #fff;
 }
-/*# sourceMappingURL=styles.css.map */
+.container a {
+  text-decoration: none;
+  color: #fff;
+}
+.container a:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=styles.css.map */

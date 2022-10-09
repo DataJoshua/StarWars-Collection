@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import CharacterInfo from "../Components/CharacterInfo";
+import FourOFour from "../Components/dummyComponents/FourOFour";
 import FilmsInfo from "../Components/FilmsInfo";
 import FilmsList from "../Components/ListFilms";
 import PersonList from "../Components/ListPerson";
@@ -16,6 +17,7 @@ function MyRouter() {
             <NavBar></NavBar>
             <Routes>
                 <Route index element={<Home/>}></Route>
+                <Route path="*" element={<FourOFour/>}></Route>
                 <Route path="/collections" element={<Collections/>}></Route>
                 <Route path="/collections/characters" element={<PersonList></PersonList>}></Route>
                 <Route path="/collections/planets" element={<PlanetsList></PlanetsList>}></Route>

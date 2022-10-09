@@ -2,34 +2,25 @@
   background: #000;
   height: 100vh;
   background-position: center;
-  display: -ms-grid;
   display: grid;
   place-items: center;
   position: relative;
 }
-
 .listHOC-container h1 {
   color: #fff;
 }
-
 .listHOC-container a {
   color: #fff;
   text-decoration: none;
 }
-
 .listHOC-container a:hover {
   text-decoration: underline;
 }
-
 .listHOC-container .btns {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 10px;
 }
-
 .listHOC-container .btns button {
   width: 130px;
   height: 30px;
-}
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */

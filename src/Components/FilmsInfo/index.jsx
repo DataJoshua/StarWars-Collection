@@ -24,18 +24,21 @@ function FilmsInfo() {
 
     return ( 
        
-       <div className="container">
+       <div className="container" style={{flexDirection:"column"}}>
             <h1>{data.title}</h1>
             <p>{data.opening_crawl}</p>
             <table className="table-info">
-                <tr>
-                    <th colSpan={2}>Information</th>
-                </tr>
-                <TableData name="episode" data={data.episode_id}></TableData>
-                <TableData name="director" data={data.director}></TableData>
-                <TableData name="producer" data={data.producer}></TableData>
-                <TableData name="release date" data={data.release_date}></TableData>
-            
+                <thead>
+                    <tr>
+                        <th colSpan={2}>Information</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <TableData name="episode" data={data.episode_id}></TableData>
+                    <TableData name="director" data={data.director}></TableData>
+                    <TableData name="producer" data={data.producer}></TableData>
+                    <TableData name="release date" data={data.release_date}></TableData>
+                </tbody>
             </table>
        </div>
     );
